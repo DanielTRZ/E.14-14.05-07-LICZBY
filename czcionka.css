@@ -1,0 +1,73 @@
+body {
+    font-family: Arial;
+    font-size: 18px;
+    margin: 0;
+    padding: 20px;
+    background-color: #555555; /* Ciemne tło wokół strony, jak na podglądzie */
+}
+
+/* Kontener główny o stałej szerokości z ramką */
+#kontener {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #999999;
+}
+
+/* Baner */
+#baner {
+    width: 100%;
+    text-align: center;
+    background-color: #d8dbcc; /* Beżowy odcieni z wzorca */
+    border-bottom: 1px solid #999999;
+}
+
+#baner img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Lewa kolumna (40%) z menu */
+#lewa {
+    float: left;
+    width: 40%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 350px;
+    border-right: 1px solid #999999; /* Pionowa linia rozdzielająca jak na schemacie */
+}
+
+/* Prawa kolumna (60%) z zawartością */
+#prawa {
+    float: left;
+    width: 60%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 350px;
+}
+
+.clear {
+    clear: both;
+}
+
+#lewa ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lewa ul li {
+    margin-bottom: 10px;
+}
+
+#lewa ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#lewa ul li a:hover {
+    text-decoration: underline;
+}

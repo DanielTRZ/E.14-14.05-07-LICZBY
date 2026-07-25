@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Matematyka</title>
+    <link rel="stylesheet" href="czcionka.css">
+    <script src="skrypt.js" defer></script>
+</head>
+<body>
+
+<div id="kontener">
+    <!-- Baner (kliknięcie prowadzi do strony głównej) -->
+    <div id="baner">
+        <a href="#" onclick="pokazPodstrone('glowna'); return false;">
+            <img src="logo.jpg" alt="MATEMATYKA">
+        </a>
+    </div>
+
+    <!-- Lewa kolumna: Menu (40%) -->
+    <div id="lewa">
+        <h3>MENU</h3>
+        <ul>
+            <li><a href="#" onclick="pokazPodstrone('opis'); return false;">Opis</a></li>
+            <li><a href="#" onclick="sprawdzHaslo(event);">Jaka to liczba?</a></li>
+            <li><a href="#" onclick="pokazPodstrone('zakres'); return false;">Liczby całkowite z zakresu</a></li>
+        </ul>
+    </div>
+
+    <!-- Prawa kolumna: Zawartość podstron (60%) -->
+    <div id="prawa">
+        <!-- Strona główna / Domyślna -->
+        <div id="tresc-glowna">
+            <h3>Zawartość podstron</h3>
+            <p>Wybierz opcję z menu po lewej stronie.</p>
+        </div>
+
+        <!-- Podstrona: Opis -->
+        <div id="tresc-opis" style="display:none;">
+            <h3>Opis</h3>
+            <p>Numer PESEL zdającego: <strong>[Wpisz swój PESEL]</strong></p>
+        </div>
+
+        <!-- Podstrona: Jaka to liczba? -->
+        <div id="tresc-liczba" style="display:none;">
+            <h3>Jaka to liczba?</h3>
+            <div id="wynik-liczba"></div>
+        </div>
+
+        <!-- Podstrona: Liczby całkowite z zakresu -->
+        <div id="tresc-zakres" style="display:none;">
+            <h3>Liczby całkowite z zakresu</h3>
+            <div id="wynik-zakres"></div>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+</div>
+
+</body>
+</html>
