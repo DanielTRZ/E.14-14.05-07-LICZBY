@@ -1,1 +1,1 @@
-# E.14-14.05-07-LICZBY
+# Rozwiązanie  E.14-14.05-07-LICZBY
